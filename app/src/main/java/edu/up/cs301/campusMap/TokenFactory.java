@@ -30,9 +30,9 @@ public class TokenFactory {
             case 0:
                 return new SimpleMapToken(x,y);
             case 1:
-                return new SimpleMapToken(x,y);
+                return new SquareToken(x,y);
             case 2:
-                return new SimpleMapToken(x,y);
+                return new TriangleToken(x,y);
             default:
                 return new SimpleMapToken(x,y);
         }
