@@ -3,11 +3,15 @@ Update Log
 1. I had trouble figuring out how to randomize
 colors on Java in Android Studio. Some StackOverflow websites
 seemed to not help, especially that they use float
-variables.
+variables. I saw an article in StackOverflow that helped me with
+this problem: https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
+
 
 2. Inheriting classes seemed to be a lapse in my memory
 as I forgot how to do them. Luckily, there's a video on YouTube
-which helped me refresh my memory.
+which helped me refresh my memory. The link is https://www.youtube.com/watch?v=9JpNY-XAseg.
 
 3. I had trouble implementing the Path method in Android
 Studio, so I went to https://developer.android.com/reference/android/graphics/Path.
+
+4.
