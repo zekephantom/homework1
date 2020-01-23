@@ -11,8 +11,8 @@ import android.graphics.Paint;
  *
  * @author Andrew M. Nuxoll
  * @author Steven R. Vegdahl
- * @author <your name here>
- * @version August 2015
+ * @author Ezekiel Rafanan
+ * @version August 2015, modified on 22 January 2020
  */
 public class SimpleMapToken {
 
@@ -27,17 +27,26 @@ public class SimpleMapToken {
      */
     public SimpleMapToken(float xCoord, float yCoord) {
         // initialize the instance variables
+
+        Random something = new Random();
+
+        int blue, green, red;
+        blue = (r.nextInt(256 - 0) + 1 + 0);
+        green = (r.nextInt(256 - 0) + 1 + 0);
+        red = (r.nextInt(256 - 0) + 1 + 0);
+
         x = xCoord;
         y = yCoord;
         radius = 15;
         paint = new Paint();
-        paint.setColor(Color.BLACK);
+        paint.setColor(Color.rgb(red, green, blue));
     }//ctor
 
+    public SimpleMapToken(){}
     /**
      * this token can paint itself on a given canvas
      */
-    public void drawOn(Canvas canvas) {
+    public void drawOn (Canvas canvas){
         canvas.drawCircle(x, y, radius, paint);
     }//drawOn
 
